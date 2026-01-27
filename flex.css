@@ -1,0 +1,15 @@
+section{
+    height: auto;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+div{
+    height: 300px;
+    width: 300px;
+    background: teal;
+    border: 1px solid red;
+}
