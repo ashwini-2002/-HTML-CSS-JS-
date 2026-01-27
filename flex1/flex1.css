@@ -1,0 +1,16 @@
+section{
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content:sp;
+    flex-wrap: wrap;
+    
+}
+div{
+    height: 300px;
+    width: 300px;
+    background: yellowgreen;
+    border: 1px solid red;
+}
