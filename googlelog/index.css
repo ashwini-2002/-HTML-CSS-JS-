@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+height: 200px;
+width: 200px;
+border-radius: 30%;
+border-top: 50px solid red;
+border-left: 50px solid yellow;
+border-bottom: 50px solid green;
+border-right: 50px solid skyblue;
+position: relative;
+}
+div::after{
+    content: "";
+    height: 50%;
+    width: 100%;
+    display: block;
+    background: skyblue;
+    transform: rotate(0deg);
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+}
+div::before{
+    content: "";
+    height: 50%;
+    width: 66%;
+    display: block;
+    background: white;
+    transform: rotate(90deg);
+    border-radius: 30%;
+    position: absolute;
+    bottom: 15px;
+    left: 93px;
+    z-index: 1;
+    top: -3px;
+
+}
+
+
