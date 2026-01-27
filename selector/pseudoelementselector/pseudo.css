@@ -1,0 +1,15 @@
+p::first-line{
+    color: chartreuse;
+}
+p::first-letter{
+    font-size: 100px;
+}
+p::after{
+    content: "😊";
+}
+p::before{
+    content: "❤️";
+}
+li::marker{
+    color: orangered;
+}
