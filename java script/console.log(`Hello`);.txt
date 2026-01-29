@@ -1,0 +1,599 @@
+//console.log(`Hello`);
+//console.log(`i like pizza`);
+
+//document.getElementById("myH1").textContent =`hi`;
+//document.getElementById("myP").textContent =`i love ash`;
+
+//window.alert(`this is an alert`);    //this is a alert pop up message
+//window.alert(`i like pizza`);
+
+//variable : A container  that stores a value.
+//variable behaves as if were that value the value it contains 
+
+//data types of JS
+//1)numbers 
+//let x;       
+//x=100;
+//console.log(x);    op:100
+
+//let x=123;
+//console.log(x);  op:123
+
+//let age =21;
+//console.log(age) ;    op:21
+
+
+//let price=10.99;
+//console.log(price); op:10.99
+
+//let gpa=2.1;
+//console.log(gpa);  op:2.1
+
+//let age=25;
+//let price=10.99;
+//let gpa=2.1;
+//console.log(typeof age);   op:number
+//console.log(typeof price); op:number
+//console.log(typeof gpa);   op:number
+//console.log('you are ${age} years old' );    op:25
+//console.log(`the price is $${price}`);       op:10.99
+//console.log('your gpa is : ${gpa}');         op:2.1
+
+
+//2)String
+//let firstName ="ashu";
+//console.log(typeof firstName);               op:string 
+//console.log(`your name is ${firstName}`);    op:ashu
+
+//let favfood="pp";
+//let email="ashu@gmail.com";
+//let address="balaji layout";
+//console.log(typeof favfood);            op:string 
+//console.log(typeof email);              op:string
+//console.log(typeof address);            op:string
+//console.log(`you like ${favfood}`);     op: you like pp
+//console.log(`your email is  ${email}`); op: your gmail is ashu@gmail.com
+//console.log(`your adress is ${address}`); op:your address is balaji layout 
+
+//3)Booleans ( true or false )
+
+//let online =true;
+//console.log(typeof online)         op:boolean 
+//console.log(`ashu is online: ${online}`); op:ashu is online:true 
+ 
+//let online=false;
+//console.log(typeof online);   op:boolean 
+//console.log(`ashu is online:${online}`);  op:ashu is online: false
+
+//let forsale=true;
+//let isStudent=true;
+//console.log(`is the car for sale: ${forsale}`); op:is the car for sale:true 
+//console.log(`enrolled: ${isStudent}`);          op:enrolled: true
+
+//let fullName ="Ashwini" ;
+//let age ="21"; 
+//let isStudent =true;
+//document.getElementById("p1").textContent=fullName;
+//document.getElementById("p2").textContent=age;
+//document.getElementById("p3").textContent=isStudent;
+
+
+//Arithmetic operators=operands (values,variables etc)
+//operators (+ - * /)
+
+//let students=30;
+//students=students+1;  op:31
+//students=students-1;   op:29
+//students=students*5;    op:150
+//students=students/2;   op:15
+//students=students**2;  op:900     (**->exponents -> 30 power to 2 )
+//students=students%3;      op:0 (%  modulus ->remainder)
+
+//students+=2;  op:32  //augument assignment operators 
+//students -=2;  op:28
+//students *=2;  op:60
+//students /=2;   op:15
+//students **=2;    op:900
+//students %=2; op:0
+//students++;    op:31 //increment 
+//students--;   op:29 //decrement 
+//console.log(students);   
+
+/*
+operator precedence 
+1.paranthesis ()
+2.exponents **
+3.multiplication & division & modulo * / %
+4.addition & subtraction  + -
+*/
+
+//let result =1+2*3+4**2;    4**2=16  2*3=6  16+6+1=23
+//console.log(result);       op:23
+
+//let result=12%5+8/2;  12%5=2  8/2=4 2+4=6
+//console.log(result); op:6
+
+//let result=6/2**(2+5);   (2+5)=7  2**7=128  128/6=0.046875
+//console.log(result);   op:0.046875
+
+//HOW TO ACCEPT USER INPUT 
+//1.EASY WAY =WINDOW PROMPT
+//2.PROFFESIONAL WAY = HTML TEXTBOX
+
+//1.
+//let username;
+//username=window.prompt("what's your username");
+//console.log(username);
+ 
+
+//2.
+//let username;
+//document.getElementById("Mysubmit").onclick=function(){
+//username = document.getElementById("myText").Value;
+//document.getElementById("myH1").textContent =`hello ${username}`;
+}
+(IN html body)
+<h1 id="myH1">Welcome</h1>
+<label>
+   username:
+</label>
+<input is="myText"><br><br>
+<button id="Mysubmit">submit</button> */
+******************************************************************************
+
+//TYPE CONVERSIONS =CHANGE THE DATA TYPE OF VALUE TO ANOTHER (STRINGS,NUMBERS,BOOLEANS)
+//let age=window.prompt("how old are you");
+//age = Number(age);
+//age+=1;
+//console.log(age,typeof age);
+
+/*let x="pizza";
+let y="pizza";
+let z="pizza";
+
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z); */
+
+/*let x="0";
+let y="0";
+let z="0";
+
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+
+console.log(x,typeof x);
+console.log(y,typeof y);
+console.log(z,typeof z);*/
+
+/*let x="";
+let y="";
+let z="";
+
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+
+console.log(x,typeof x);              //empty string 
+console.log(y,typeof y);
+console.log(z,typeof z);*/
+
+/*let x;
+let y;
+let z;
+
+x=Number(x);
+y=String(y);
+z=Boolean(z);
+
+console.log(x,typeof x);          //undifined string
+console.log(y,typeof y);
+console.log(z,typeof z);*/ 
+
+//CONSTANT
+//CONST =A VARAIABLE THAT CAN'T BE CHANGED
+
+/*let pi=3.14159;
+let radius;
+let circumference;
+radius =window.prompt(`enter the radius of a circle`);
+radius=Number(radius);
+circumference=2*pi*radius;     //2*3.14159*4
+console.log(circumference);  //op:enter 4 ----->25.13272*/
+
+/*const PI=3.14159;  //if it is constaNT WE AHOULD WRITE IN UPPER CASE LETTERS EX:PI
+let  radius;
+let circumference;
+  document.getElementById("mysubmit").onclick=function(){
+   radius = document.getElementById("myText").Value;
+   radius=Number(radius);
+   circumference=2 * PI * radius; 
+   document.getElementById("myH2").textContent=circumference+"cm";
+
+  }
+  IN HTML (IN BODY)
+  <h1 id="myH1">enter the radius of the circle:</h1>
+   <label>radius:</label>
+   <input type="text" id="myText"><br><br>
+   <button id="mysubmit">submit</button>
+   <h2 id="myH2"></h2>
+  */
+***************************************************************************
+in js
+   //COUNTER PROGRAM
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countLabel = document.getElementById("countLabel");
+let count=0 ;
+
+increaseBtn.onclick=function(){
+    count++;
+    countLabel.textContent=count;
+}
+decreaseBtn.onclick=function(){
+    count--;
+    countLabel.textContent=count;
+}
+resetBtn.onclick=function(){
+    count=0;
+    countLabel.textContent=count;
+}
+
+---------------
+in html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label id="countLabel">0</label><br>
+    <div id="btncontainer">
+    <button id="decreaseBtn" class="buttons">decrease</button>
+    <button id="resetBtn" class="buttons">reset</button>
+    <button id="increaseBtn" class="buttons">increase</button>
+    </div>
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
+--------------
+in css
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btncontainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color:rgb(134, 134, 249);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:background-color 0.25s;
+}
+.buttons:hover{
+    background-color:rgb(236, 197, 236);
+}
+************************************************************
+
+//Math=built-in object that provides a collection of properties and methods
+console.log(Math.PI);
+op:3.141592653589793
+---------------------------------
+console.log(Math.E);
+op:2.718281828459045
+-----------------------------------
+let x=3.21;
+let y=2;
+let z;
+z=Math.round(x);
+console.log(z);
+op:3 //round figure of 3.21=3
+-----------------
+let x=3.89;
+let y=2;
+let z;
+z=Math.round(x);
+console.log(z);
+op:4
+---------------------
+let x=3.89;
+let y=2;
+let z;
+z=Math.floor(x);   //op:3  floor means rounded down 
+console.log(z);
+---------------------------
+let x=3.21;
+let y=2;
+let z;
+
+z=Math.ceil(x);      //op:4  3.21 is rounded up to 4
+console.log(z);
+---------------------------------
+let x=3.21;
+let y=2;
+let z;
+
+z=Math.trunc(x);  //Op:3 (will elminate after the decimal 3.21 is 3)
+console.log(z);
+-------------------------------
+let x=3;
+let y=2;
+let z;
+z=Math.pow(x,y); //op:3 power 2=9
+console.log(z);
+-----------------------
+
+let x=3;
+let y=2;
+let z;
+z=Math.pow(y,x); //op:2 power 3=8
+console.log(z);
+----------------
+let x=81;
+let y=2;
+let z;
+z=Math.sqrt(x); //op:81 sqaure =9
+console.log(z);
+----------------------
+let x=10;
+let y=2;
+let z;
+z=Math.log(x); //op:2.3
+console.log(z);
+--------------------------
+let x=45;
+let y=2;
+let z;
+z=Math.sin(x); //op:.0.85
+console.log(z);
+----------------------------------
+let x=45;
+let y=2;
+let z;
+z=Math.cos(x); //op:0.52
+console.log(z);
+--------------------------------------
+let x=45;
+let y=2;
+let z;
+z=Math.tan(x); //op:1.61
+console.log(z);
+----------------------------
+let x=-3.21;
+let y=2;
+let z;
+z=Math.abs(x); //abs=absolute function op:3.21
+console.log(z);
+------------------------------------------
+let x=-3.21;
+let y=2;
+let z;
+z=Math.sign(x); //op:-1
+console.log(z);
+----------------------
+let x=3.21;
+let y=2;
+let z;
+z=Math.sign(x); //op:1
+console.log(z);
+--------------------
+let x=0;
+let y=2;
+let z;
+z=Math.sign(x); //op:0
+console.log(z);
+---------------------------------
+let x=3;
+let y=2;
+let z=1;
+let max=Math.max(x,y,z);
+console.log(max);     //op:3
+-----------------------
+let x=3;
+let y=2;
+let z=1;
+let min=Math.min(x,y,z);
+console.log(min);     //op:1
+---------------------------let x=3;
+let y=2;
+let z=1;
+let min=Math.min(x,y,z);
+console.log(min);     //op:1
+***********************************************************************************************
+
+//Random generator
+let RandomNum =Math.random();
+console.log(RandomNum);          //op:0.144 any  random number btw 0 and 1
+---------------------------------------------
+//Random generator
+let RandomNum =Math.random()*6;
+console.log(RandomNum);          //op:1.414 random number btw 1 and 6(dice)
+-----------------------------------------
+//Random generator
+let RandomNum =Math.floor(Math.random() * 6);
+console.log(RandomNum);          //op:3  random number btw 1 and 6(dice)       floor is used to remove decimal number 2.32 op:2
+---------------------------------------
+
+//Random generator
+let RandomNum =Math.floor(Math.random() * 6);
+console.log(RandomNum);          //op:54  any random number btw 1 and 100       floor is used to remove decimal number 
+-------------------------------------------------------------
+//Random generator
+let RandomNum =Math.floor(Math.random() * 100)+1;        //1 * 100 and +1
+console.log(RandomNum);          //op:3  random number btw 1 and 6(dice)       floor is used to remove decimal number 
+----------------------------
+//Random generator
+const min =50;
+const max =100;
+let RandomNum =Math.floor(Math.random() * max)+min;        //*100+50
+console.log(RandomNum);          //op:90  any random number btw 50 to 100       floor is used to remove decimal number 
+---------------------------------------------
+//Random generator
+const min =50;
+const max =100;
+let RandomNum =Math.floor(Math.random() *(max-min))+min;       
+console.log(RandomNum);          //op:90  any random number btw 50 to 100       floor is used to remove decimal number 
+--------------------------------------------
+in js
+//Random generator
+const myButton = document.getElementById("myButton");
+const myLabel = document.getElementById("myLabel");
+const min = 1;
+const max = 6;
+let randomNum;
+myButton.onclick = function(){
+    randomNum = Math.floor(Math.random()* max) + min;
+    myLabel.textContent = randomNum;
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <button id="myButton">roll</button><br>
+   <label id="myLabel"></label>
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
+---
+body{
+    font-family: Verdana;
+    text-align: center;
+}
+#myButton{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+#myLabel{
+    font-size: 3em;
+}
+-------------------------------
+---------------------------------
+//Random generator
+const myButton = document.getElementById("myButton");
+const Label1 = document.getElementById("Label1");
+const Label2 = document.getElementById("Label2");
+const Label3 = document.getElementById("Label3");
+const min = 1;
+const max = 6;
+let randomNum1;
+let randomNum2;
+let randomNum3;
+myButton.onclick = function(){
+    randomNum1 = Math.floor(Math.random()* max) + min;
+    randomNum2 = Math.floor(Math.random()* max) + min;
+    randomNum3 = Math.floor(Math.random()* max) + min;
+
+    Label1.textContent = randomNum1;
+    Label2.textContent = randomNum2;
+    Label3.textContent = randomNum3;
+    
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <button id="myButton">roll</button><br>
+   <label id="Label1" class="mylabels"></label><br>
+   <label id="Label2" class="mylabels"></label><br>
+   <label id="Label3" class="mylabels"></label><br>
+    <script src="index.js"></script>
+   
+    
+</body>
+</html>
+-------
+body{
+    font-family: Verdana;
+    text-align: center;
+}
+#myButton{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+.mylabels{
+    font-size: 3em;
+}
+********************************************************************
+//IF STATEMENTS=IF A CONDITION IS TRUE,EXECUTE SOME CODE IF NOT,DO SOMETHING ELSE(EXIT)
+
+let age=25;
+if(age >= 18) {
+    console.log("you are old enough to enter this site");
+}
+op:you are old enough to enter this site
+---------------------------------------------
+//IF STATEMENTS=IF A CONDITION IS TRUE,EXECUTE SOME CODE IF NOT,DO SOMETHING ELSE
+
+let age=25;
+if(age >= 27) {
+    console.log("you are old enough to enter this site");
+}
+op:_______
+---------------------------
+
+//IF STATEMENTS=IF A CONDITION IS TRUE,EXECUTE SOME CODE IF NOT,Exit
+
+let age=25;
+if(age >= 27) {
+    console.log("you are old enough to enter this site");
+}
+else{
+    console.log("you must be 18+ to enter the site")
+}
+op:you must be 18+ to enter the site
+-------------------------------------------
+//IF STATEMENTS=IF A CONDITION IS TRUE,EXECUTE SOME CODE IF NOT,Exit
+
+let time=9;
+if(time <= 12) {
+    console.log("GOOD MORNING");
+}
+else{
+    console.log("GOOD AFTERNOON")
+}
+OP:GOOD MORNING
+-----------------------
+//IF STATEMENTS=IF A CONDITION IS TRUE,EXECUTE SOME CODE IF NOT,Exit
+
+let time=14;
+if(time <= 12) {
+    console.log("GOOD MORNING");
+}
+else{
+    console.log("GOOD AFTERNOON")
+}
+OP:
+

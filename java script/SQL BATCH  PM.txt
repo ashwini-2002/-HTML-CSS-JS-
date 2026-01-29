@@ -1,0 +1,121 @@
+1.CREATE database minu;   // to create the database
+2.use minu;   // to use the datebase
+3.create table emp(empno int primary key , Ename varchar(20), job varchar(20), Mgr int, hiredate date, sal int , comm int, deptno int);
+//to create the table 
+4.describe emp; // it will show the table 
+
+5. rename table emp to emp1;
+   show tables;
+
+6. drop table emp1;
+   show tables;
+
+7.
+
+
+
+example 
+
+create database ashi;
+use ashi;
+create table info(id int, name varchar(20), age int , gender varchar(20));
+insert into info values(01 , 'ashwini', 21,'female'),(02,'vaishnavi',22,'female'),(03 , 'omsree', 21, 'female'),(04,'niharika',22,'female');
+select * from info;
+
+
+
+9/7/2024
+use ashi;
+select * from emp ;
+insert into emp(empno,ename,job,mgr,hiredate
+select * from emp;
+alter table emp add ephone int;
+describe emp;
+alter table emp modify column ephone varchar 
+
+
+
+project 1:
+1.WAQTD all the details from the table 
+2.WAQTD state whose country is united states
+3.WAQTD category without duplicates
+4.WAQTD who is having profit greater than 100.5
+5.WAQTD details of the SampleSuperstores which city is having Fort Worth in the postal code 76106
+6.WAQTD state and country of SampleSuperstores which state has Texas and calfornia
+7.WAQTD SubCategory of SampleSuperstores containing A
+8.WAQTD city of SampleSuperstores who has 2 consecective L in the city
+9.WAQTD whose Subcategory doesnot start with A
+10.WAQTD Min Quantity of SampleSuperstores
+11.WAQTD Avg sales needed to pay all the SampleSuperstores in each profit excluding the SampleSuperstores of the profit
+12.WAQDTD PostalCode of  SampleSuperstores  in  desc order?
+13. WAQTD State,region who are getting sales more than all the Corporate
+14.WAQTD State,region who are getting sales more than any the Corporate
+15.WAQTD the discount who are getting second min profit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-

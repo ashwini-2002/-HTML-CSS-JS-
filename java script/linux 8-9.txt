@@ -1,0 +1,76 @@
+/ls/9/
+pwd
+mkdir type1
+      ------
+mkdir -p 
+touch filename
+      --------
+touch .filename
+      ------------
+clear
+cd ..
+cd ../ ..
+
+
+
+lsblk -f
+fsck -f          (right side)  ctrl c  
+dskmngmt -msc
+
+9/10/2024
+touch blankfile.txt
+ls
+cat blankfile.txt
+vi blankfile.txt
+
+I
+type something 
+
+esc :wq:  (esc in keyword)
+
+wq!                (save)
+
+vl edit.txt^c
+
+------------------------------------------------------------------
+ls -lrt
+su root
+sudo root
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1)file
+--------
+touch 
+vi/vim/nano   -> edit file or text file
+
+2)mkdir dirname
+
+mkdir-p dirname
+
+parent1/child1/child2/--------------> nested directories
+
+
+cd dirname
+
+3)delete file
+
+rm,
+rm-rf filename
+
+
+
+
+
+                     

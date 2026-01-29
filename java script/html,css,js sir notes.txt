@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+       3 types
+       1.ordered list  -ol  - li
+       2.unordered list -ul
+       3.discriptive list -dl
+
+    
+    -->
+
+
+    <h3>ordered list</h3>
+    <ol>
+        <li>HTMl</li>
+        <li>CSS</li>
+        <li>Js</li>
+        <li>React</li>
+    </ol>
+
+    <h3>unordered list</h3>
+    <ul>
+        <li>HTMl</li>
+        <li>CSS</li>
+        <li>Js</li>
+        <li>React</li>
+        
+    </ul>
+
+    <!-- dl -discrptive list
+         dt- discritive title
+          dd- discriptive data -->
+
+
+          <dl>
+            <dt>Frontend</dt>
+            <dd>HTMl</dd>
+            <dd>css</dd>
+            <dd>js</dd>
+            <dd>react</dd>
+          </dl>
+
+          <!-- tables
+            thead
+            tbody
+            tr - table row
+            th - table headings
+            td - table data 
+            -->
+
+
+            <table style="width: 500px; text-align: center;border:2px black solid;">
+                <thead>
+                    <tr>
+                        <th>SI NO</th>
+                        <th>Name</th>
+                        <th>CIty</th>
+                        <th>Age</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Sidhu</td>
+                        <td>Banglore</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Sidhu</td>
+                        <td>Banglore</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Sidhu</td>
+                        <td>Banglore</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Sidhu</td>
+                        <td>Banglore</td>
+                        <td>24</td>
+                    </tr>
+
+  
+
+
+                </tbody>
+            </table>
+
+
+
+            <!-- forms -->
+             <!-- label - to refenece
+                 input -  -->
+
+                 <table>
+                    <h3>Registration form</h3>
+                    <form action="https://www.unicef.org/" >
+                    <tr>
+                        <th> <label>Name<sup>*</sup>:</label></th>
+                        <td><input type="text" placeholder="enter name" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Email<sup>*</sup>:</label></th>
+                        <td><input type="email" placeholder="enter email" required ></td>
+
+                    </tr>
+
+                    <tr>
+                        <th><label>Mobile<sup>*</sup>:</label></th>
+                        <td><input type="number" placeholder="enter mobile" required ></td>
+                    </tr>
+                    <tr>
+                        <th><label>Password<sup>*</sup>:</label></th>
+                        
+                        <td><input type="password" placeholder="enter password" required ></td>
+                    </tr>
+                    <tr>
+                        <th> <input type="submit" ></th>
+                    </tr>
+
+                </form>
+                 </table>
+
+
+
+
+
+            
+           
+               
+                <br>
+                
+                <br>
+                
+                <br>
+                
+                <br>
+               
+
+
+
+           
+             
+
+            <div style="height: 400px;">
+            
+
+            </div>
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+---------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+      <form action="">
+        <label>Gander</label>
+        <input type="radio" value="Male" name="Gander">
+        <label>Male</label>
+        <input type="radio" value="Female" name="Gander">
+        <label>Female</label>
+        <input type="radio" value="Others" name="Gander">
+        <label>Others</label ><br>
+         <label>Technologies</label>  
+         <input type="checkbox" >
+         <label>HTMl</label> 
+         <input type="checkbox">
+         <label>css</label>
+         <input type="checkbox" >
+         <label>Js</label><br>
+         <label>Date&Time:</label>
+         <input type="datetime-local"><br>
+         <label>Color</label>
+         <input type="color"><br>
+         <label>Upload</label>
+         <input type="file"><br>
+         <label>Range</label>
+         <input type="range"><br>
+         <label>URL</label>
+         <input type="url"><br>
+         <label>Month</label>
+         <input type="month"><br>
+         <input type="button" value="click">
+         <input type="reset">
+         <input type="submit">
+
+
+         <!-- Map  -->
+
+
+
+         <img src="map.jpeg" alt="" usemap="#data">
+
+
+         <map name="data">
+
+            <area shape="rect" coords="208,72,13,230" href="https://www.unicef.org/" alt="">
+            <area shape="rect" coords="958,205,844,399" href="https://www.unicef.org/" alt="">
+
+
+
+         </map>
+                  
+
+
+
+
+      </form>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+-------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="color.css">
+    <title>Document</title>
+    <style>
+        #data{
+            background-color: violet;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .user{
+            background-image:url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            height: 300px;
+            color: white;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- css-cascanding style sheet
+         is used to desing web page content
+          -->
+
+          <!-- 3 types 
+           1.Inline  css  - inside tag , as a attributes
+
+            propertyname:value;
+           2.Internal css - using selector 
+
+               3 types 
+               1.class - collection  - .class_name
+               2.id    - unique      - #id_name
+               3.tag   -[avoid]      -tag_name
+
+               <style>
+
+                .class_name{
+                propertyname:value;,
+                propertyname:value;
+                propertyname:value;
+
+                }
+                #id_name{
+                propertyname:value;
+                propertyname:value;
+                propertyname:value;
+                }
+                tag_name{
+                propertyname:value;
+                propertyname:value;
+                propertyname:value;
+                }
+               </style>
+
+
+
+
+
+
+           3.External css - create separete css file
+               file_name.css
+
+
+           
+          -->
+
+          <!-- padding - it is used to create some space inside the block 
+               margin  - it is used to make some sapce outside the block-->
+
+   
+
+          <div style="background-color:teal;padding:20px;border:2px black double;width:500px;text-align: center;">
+            <h1>Inline css </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>Click</button>
+          </div>
+
+
+
+          <div id="data">
+            <h1>Internal css </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>Click</button>
+
+          </div>
+
+          <div class="user">
+            <h1>Internal css </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>Click</button>
+
+          </div>
+
+
+          <div class="user1">
+            <h1>External css </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <button>Click</button>
+
+          </div>
+
+          <h1>dfghjkl</h1>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+----------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #data{
+            background-color: teal;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+        }
+        #data ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+        } 
+        #data1{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        #data1 ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+        }
+
+        #data2{
+            background-color: violet;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+
+
+        }
+
+        #data2 ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+        #user{
+            background-color: antiquewhite;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+        #item1{
+            background-color: aquamarine;
+            padding: 10px;
+            text-align: center;
+            border: 2px black solid;
+            border-radius:50%;
+        }
+        #item2{
+            background-color:red;
+            padding: 10px;
+            text-align: center;
+            border-radius: 30%;
+            border: 2px black dotted;
+        }
+
+        #item3{
+            background-image: url("https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            /* height: 300px; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            border: 2px black double;
+            border-radius: 50%;
+        }
+
+        #center{
+
+            background-color: red;
+            height: 400px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- display:flex  - it is used to aling row wise content into the cloumn wise
+                    -single diemention
+         justify-content:"space-between" -it is used create some space in b/w block
+         justify-content:"space-around"  - it is used to make same space b/w amd around blocks
+         justify-content:"space-evenly"  - it is used to make equal sapce b/w block
+         justify-content:"center"        - it used make the content column wise center
+         align-items:center               - it is used make row wise center        
+
+         
+     
+    -->
+
+
+
+    <div id="data">
+        <p>Besant Technologies</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    <div id="data1">
+        <p>Besant Technologies</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    
+    <div id="data2">
+        <p>Besant Technologies</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    <div id="user">
+        <div id="item1">
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div id="item2">
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div id="item3">
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div>
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div>
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div>
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+    </div>
+
+
+      <div id="center">
+        <h1>Lorem ipsum, dolor sit <br> amet consectetur adipisicing.</h1>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+-------------------------------------------

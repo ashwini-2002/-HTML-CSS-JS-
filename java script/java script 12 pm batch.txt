@@ -1,0 +1,1119 @@
+ visual stdio
+ashu.html -html 
+ashi.html-css
+
+
+block elements and inline elements
+image mapping--imp
+iframe tag--imp
+
+
+semantic-meaningful element
+non semantic-meaningless element
+span element-
+nested webpage-one webpage inside another webpage we need (iframe tag)
+
+marquee tag is used to scroll down the content ex: news channel below content will be moving.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ASHWINI CM</title>
+<style>
+    #head{
+        background-color: aqua;
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+
+    }
+</style>
+</head>
+
+<body>
+  <!--css =cascading style sheet
+is used to design web page content
+
+3 types 
+1.inline css=inside tag, as a attributes 
+propertyname=value;
+padding -it is used to create some space inside the block 
+5 properties 
+paddy top 
+paddy bottom
+paddy left
+paddt right 
+
+2.internal css-using selector   (after title (should use in head))
+there are 3 types of selector 
+1.class-collection -class_name
+id -unique- #id_name
+3.tag-[avoid] -tag_name
+
+<style>
+
+    .class_name{
+      propertyname=value ; 
+      propertyname=value;
+    }
+
+    .id_name{
+        propertyname=value;
+        propertyname=value;
+    }
+    .tag_name{
+    propertyname=value;
+    propertyname=value;
+    }
+</style>
+
+
+3.external css-create seperate css file
+ we have to save the file name with filename.css ex:ashu.css
+
+-->
+<div style="background-color: blueviolet; padding: 20px; border: 2px  black double;width:auto;text-align:center">
+    <h1>inline css</h1>
+    <p>
+        Lorem ipsum dolor sit amet.<br>
+        <button>click</button>
+    </p>
+</div>
+
+
+<div id="data">
+    <h1>internal css</h1>
+    <p>
+        Lorem ipsum dolor sit amet.<br>
+        <button>click</button>
+    </p>
+    </div>
+
+
+    <div class="user">
+        <h1>external css</h1>
+        <p>
+            Lorem ipsum dolor sit amet.<br>
+            <button>click</button>
+        </p>
+
+</div>
+</body>
+</html>
+
+
+
+18/07/2024
+flex -imp topic ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-*---------------------------------------------------------------
+java script 
+
+
+1.What is JS?
+  Js is a Scripting Language . 
+  Js is a Interpreted programming Langauge .
+  Js is a Object oriented Programming language.
+  Js is a Most popular programming lanugae bcoz , it is used in both 
+  client side and server side .
+  Js used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations ,
+pop-up menus, clickable buttons, control multimedia, etc.
+
+
+
+
+Advantages :
+  JS is easy to learn & use
+  Debugging is very easy
+  Cross platform 
+  use both client side & server side 
+  Reduces load on the server
+  Powerful frameworks
+  Versatile : you can able to create any kind of application 
+
+
+Disadvantages : 
+  Slower Rendering Than Other Languages:
+In terms of speed, JavaScript is generally slower than lower-level programming languages such as C++ or Java. This is due to JavaScript's interpreted nature, which means that code is executed line-by-line rather than being compiled into machine code before execution.
+
+  Browser Inconsistencies:
+JavaScript can be interpreted differently by various browsers, making it necessary to test and run the code on different platforms before publishing.
+
+Additionally, older browsers may not support newer functions, requiring developers to ensure compatibility across multiple browser version
+----------------------
+## JavaScript Disadvantages
+
+
+ 1. *Security Risks*
+Since JavaScript code is visible to users, it can potentially be misused for malicious purposes like stealing data or compromising the security of the website[4]. Inserting malicious code into a site is also relatively easy.
+
+ 2. *Browser Compatibility Issues*
+JavaScript is interpreted differently across various browsers, so code needs to be tested extensively before publishing to ensure it works as expected on all platforms[2][4]. Older browsers may not support newer JavaScript features.
+
+ 3. *Debugging Difficulties*
+Debugging JavaScript can be challenging as error messages are not always clear and some HTML editors have limited debugging capabilities compared to other languages like C/C++.
+
+ 4. *Inheritance Limitations*
+JavaScript only supports single inheritance, while some programs may require the multiple inheritance feature found in other object-oriented languages.
+
+5. *Slow Bitwise Operations*
+JavaScript stores numbers as 64-bit floating-point values but performs bitwise operations on 32-bit integers. The repeated conversion between formats can slow down bitwise operations.
+
+ 6. *Rendering Issues*
+A single error in the JavaScript code can cause the entire script to stop rendering, making the website appear to be running without JavaScript even though browsers are tolerant of such mistakes.
+
+ 7. *Slower Performance*
+As an interpreted language, JavaScript can be slower than compiled languages, which can impact performance in applications that require high speed[3]. The client-side nature of JavaScript also means it can increase server load if used excessively.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basics of javascript</title>
+</head>
+<body>
+    <!--
+   
+    how to take separate new file for  js 
+    take new file save with extension js
+    ex:ashu.js
+
+     how to iuse js in html=
+    by using script tag+used to write js in html 
+    
+    in body section we should write scipt inside the script tag only
+    <script src="index.js">
+
+        // single line comment lines
+        /* multiple comment lines*/
+
+       1. console.log()    = is used as print 
+        console.log("ashwini")
+
+       2. how to get input from user 
+        prompt() =it is used to get input from the user 
+
+        prompt("enter name")
+
+       3. alert(" ")  =it is used to give one alert msg
+
+        alert("if your not completing the assignment  task you have to attend sat and sun classes ")
+
+        4.parseint("")- if is used to get round numbers (if we give any decimal number it wil round figure)
+
+       5. createElement("")  = it is used to create html elements dyanamically in html document
+
+       6.variables - it is used to store some data or values 
+       three types :
+       1.var
+       2.let
+       3.const
+
+       how to write variable name = 
+       variables starts with underscore or alphabetic
+       variable names are case sensetive (we cant use same name , word ,letter again)
+       
+       difference btw var ,let,const
+       var 
+       let
+       const 
+       
+
+in let and var we can reassign values
+in const we cannot reassign values
+
+    -->
+<script>
+      var a="good"
+      console.log(a)
+
+      let b="react"
+      console.log(b)
+
+      const c="js"
+      console.log(c)  
+
+
+      
+</script>
+
+
+<!--data types = to store values using data type
+1.primitive data type =custamized datatype
+5 types 
+1.string=group of alpha numeric characters(any kind of data can be passed)
+it is denoted by "" , ''
+
+ ex:let a="hello"
+ console.log(a)
+
+typeof()  = it is used to check which data type
+console.log(typeof(a))
+
+2.number 
+two types
+integer=round values
+float=decimal
+
+lex:letb=67.8
+console.log(b)
+console.log(typeof(b))
+
+3.boolean=true,false
+
+
+
+
+ES6=ecma script 
+4.undefined=variable declaring  but value not assigned
+let d
+console.log(d)
+console.log(typeof(d))
+
+5.null=variable has declared and values also assigned but something is missing
+let e=null
+console.log(e)                 op:null
+console.log(typeof(b))         op:object
+
+
+
+2.non primitive data type= uncustamized datatype 
+two types
+1.array=collection of data . it is denoted by []   it will start with index or value 0
+let arr['data',45,null,true] //all the data types we can pass
+console.log(arr)
+
+
+array types:
+
+pop()=it is used to remove one element in the end of the array
+let arr[1,2,3,4,5]
+console.log(arr)
+arr.pop()
+console.log(arr)
+
+push()=it is ued to add one or more elements in the end of the array
+let arr[1,2,3,4,5]
+console.log(arr)
+arr.push(9,10)
+console.log(arr)
+
+shift()= it is ued to remove one element in the beginning of the array
+let arr[1,2,3,4,5]
+console.log(arr)
+arr.shift(7,8,9)
+console.log(arr)
+
+unshift()=it is used  to add one or more element in beginning of the array
+let arr[1,2,3,4,5]
+console.log(arr)
+arr.unshift('a','b')
+console.log(arr)
+
+reverse()= it is used to reverse the order
+
+sort()=it is used to make asscending order
+
+ imp
+  slice()=it is used to return particular range of values
+
+
+
+
+ imp 
+ splice()=it is used to add and remove values in the array
+
+
+
+length()= to know the length of element (length of values present in the array)
+
+index0f()= it is used to find the index position of an element
+
+concate() = to add the values
+-->
+</body>
+<script>
+ // 2.object=collection of keys and values. it is denoted by {}  
+ //syntax 
+  //let obj={
+  // key:value,
+  //}
+
+ //ex:
+   let obj={
+   name:"js",
+   age:"06",
+   city:"front end"
+
+   }
+  //how to add objects 
+  Syntax
+  obj["key"]=value
+
+ex:
+  obj["marks"]=89
+
+
+</script>
+<!-- operators
+1.Arithmetic operator: mathematical operations
++,-,*,/,%
+console.log(4+6) =10
+console.log(6-4) =2
+console.log(4*6) =24
+console.log(4/2) =2 answer (quotient)
+console.log(3%2) =1 reminder
+console.log(4%2) =0
+
+2.comparision operator returns as boolean 
+> greater than
+<
+>=
+<=
+==
+===
+!=
+
+
+console.log(5>=8) =  false
+console.log(5<8) =true
+console.log(4<=2) =false
+console.log(3>8)=false
+console.log(4<9)=true
+console.log(3!=8)=true
+console.log(8=8)=true
+
+imp
+ES6
+== it will check values only
+=== it will check values and datatypes
+console.log(5==5)=true
+console.log("5"=="5")=true
+console.log("5"==5)=true
+console.log("5"===5)=false
+
+
+3.logical operator - it is used to perform logical operations
+1.and operator (&&)
+every condition becomes true the statement becomes true
+if any one condition is false the statement becomes false 
+
+console.log(4>9 && 4<5)  = false + true =false
+console.log(10>9 && 4<5)  =true + true =false
+
+
+2.or (||)
+if any one condition become true  the statement becomes true
+console.log(4>5 || 8>4)  = false + true =true
+
+3.
+
+
+
+
+ imp 
+ 4.ternary operator: it is used to make conditions ,it is a single line expression ,
+ instead of if condition we can use ternary operation
+ syntax:
+ condition ? true : false
+
+ ex:
+ let a=8
+ let b=a>7 ? true : false
+ console.log(b)
+ op:8
+
+ let a=8
+ let b=a<7 ? i am passed : i am failed
+  console.log(b)5
+ op: i am failed
+
+
+5.spread operator=used to merge two or more arrays
+it is denoted by ... (three dots)
+let a=[1,2,3]
+let b=[4,5,6]
+let c=[7,8,9]
+console.log(...a,...b,...c)
+op:[1,2,3,4,5,6,7,8,9]
+
+spread and ternary operator introduced in Es6=echma script :
+
+
+-->
+
+
+<!--
+conditional statements:
+two types
+1.if
+2.else
+3.else if 
+
+if(condition){
+//group of statements
+}
+else {
+//group of statements
+}
+-->
+<script>
+  let a=9;
+  if(a>8){
+    alert("if condition passed")
+  }
+  else if(a==6){
+    alert("eO,jgwse if passed")
+  }
+  else{
+    alert("else condition existed")
+  }
+</script>
+
+<!--
+loops:is used to iterate 
+1.for 
+2.while
+3.do while
+4.for-in
+5.for-of
+
+1.for loop
+for(let intial value ;condition ;inc/dec){
+group of statements
+}
+
+ex:
+for(let i=0;i<=10;i++){
+console.log(i)
+}   
+//i+    = one plus means one time increment //  i++ =two plus means two time increment
+
+even 
+for(let i=0;i<=10;i++)
+if(i%2==0){
+console.log(i)
+}
+
+odd
+for(let i=0;i<=10;i++)
+if(i%2==1){
+console.log(i)
+}
+
+
+let arr=[2,3,4,5,6]
+for(let i=0;i<arr.length;i++)
+console.log(i)
+
+op:0
+1
+2
+3
+4
+
+
+let arr=[2,3,4,5,6]
+for(let i=0;i<arr.length;i++)
+console.log(arr[i])
+
+
+op:2
+3
+4
+5
+6
+
+max:
+let arr=[3,6,4,1,2,9,8]
+let a=arr[0]
+for(let i=0;i<arr.length;i++)
+if(arr.[i]>a){
+a=arr[i]
+}
+}
+console.log(arr)
+
+op:9
+
+min:
+let arr=[3,6,4,1,2,9,8]
+let a=arr[0]
+for(let i=0;i<arr.length;i++)
+if(arr.[i]<a){
+a=arr[i]
+}
+}
+console.log(arr)
+
+op:1
+
+
+how to find out even in array 
+
+
+let arr=[3,6,4,1,2,9,8]
+for(let i=0;i<arr.length;i++){
+if(arr.[i]%2==0){
+console.log(arr)
+}
+}
+op:
+2
+6
+4
+8
+
+
+how to find out odd in array 
+let arr=[3,6,4,1,2,9,8]
+for(let i=0;i<arr.length;i++){
+if(arr.[i]%2==1){
+console.log(arr)
+}
+}
+op:
+1
+3
+9
+
+sum
+let arr=[3,6,4,1,2,9,8]
+let sum=0
+for(let i=0;i<arr.length;i++){
+sum=sum+arr[i]       //0+3=3  3+6=9 9+4=13 13+1=14 14+2=16 16+9=25 25+8=33
+}
+console.log(sum)
+
+op:3
+9
+13
+14op
+16
+25
+33
+
+nested loops
+
+for(let i=0;i<=5;i++){
+console.log(i)
+}
+for(let j=0;j<=5;j++){
+console.log(i)
+}
+
+
+
+square 
+ for(let i=0;i<=4;i++){
+
+ for(let j=0;j<=4;j++){
+ document.write("*")
+ }
+ document.write("</br>")
+}
+
+-->
+
+<!--
+4/7/24
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+
+//  to print right angle triangle
+
+
+      // for(let i=0;i<=4;i++){
+
+      //      for(let j=0;j<=i;j++){
+
+      //       // console.log(i)
+      //       document.write("*")
+
+      //      }    
+
+      //      document.write("</br>")
+           
+      //        //i= 0  //
+
+
+      // }
+
+    
+
+      // while-loop - starting with condtion loop 
+
+      // intial value
+      // while(condtion){
+      // group of statements
+      // inc/dec
+      
+    // }
+
+
+    // let i=0  
+
+    // while(i<=10){
+    //     if(i%2==1){
+    //       console.log(i)
+    //     }
+    //   i++
+    // }
+
+
+    //  let a=[4,3,2]
+
+    //  let i=0
+    //  while(i<a.length){
+    //   console.log(a[i])
+    //   i++
+    //  }
+
+
+    // find armstong number ;
+    
+    
+    let data=prompt("enter number")
+    let n=data
+    let sum=0
+    while(n>0){
+
+
+      let last=n%10  // to find last digit
+      let cal=last**data.length
+      sum+=cal
+      n=parseInt(n/10)  // to remove last digit
+
+
+
+
+
+    }
+
+    // console.log(sum)
+    if(sum==data){
+      alert("it is armstrong number")
+    }else{
+      alert("it is not a armstrong number")
+    }
+    
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>-->
+
+
+
+
+<!--
+5/7/24
+ do-while
+ for-of
+ for-in
+
+
+ do-while loop= ending with condition loop 
+
+ syntax:
+ intial value
+ do{
+ group of statements
+ }
+ while(condition)
+
+
+ ex: 
+let i=10
+do{
+console.log(i)
+i--
+}
+while(i>=0)
+
+op:10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+
+for-of=it is used to iterate the arrays 
+
+syntax:
+for(intial vairable of array_name){
+group of statements
+}
+
+Ex:
+let arr=[2,3,4,5,6,7,8]
+for(let s of arr){
+console.log(s)
+}
+
+op:
+2
+3
+4
+5
+6
+7
+8
+
+max:
+let arr=[2,3,4,5,6,7,8]
+let max=arr[0]
+for(let s of arr){
+console.lof(s)
+if(s>max){
+max=s
+}
+}
+console.log(max)
+
+op:8
+
+min:
+let arr=[2,3,4,5,6,7,8]
+let min=arr[0]
+for(let s of arr){
+console.lof(s)
+if(s>min){
+min=s
+}
+}
+console.log(min)
+
+op:2
+
+
+for-in=it is used iterate object key
+  
+syntax:
+
+for(intial vairable in object_name){
+group of statements
+}
+
+Ex:
+let obj{
+name:"ashu",
+city:"bangl",
+email:"ashu13".
+state:"ka"
+}
+for(let i in obj )
+console.log(i)
+
+
+Ex:
+let obj{
+name:"ashu",
+city:"bangl",
+email:"ashu13".
+state:"ka"
+}
+for(let i in obj )
+console.log(i+":"+obj[i])
+
+Ex:
+let obj{
+name:"ashu",
+city:"bangl",
+email:"ashu13".
+state:"ka"
+}
+for(let i in obj )
+console.log(obj[i])
+
+
+
+
+
+-->
+
+-----------------------------------------------------------------------------------------------------------------
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+
+    <script>
+
+
+// do-while   - ending with condtion loop 
+
+    // intial value
+    //    do{
+
+      //  group of statements
+    
+      // }while(condtion)
+
+
+
+      // let i=10
+      // do{
+      //   console.log(i)
+      //   i--
+      // }while(i>=-10)
+
+
+
+
+
+
+
+// for-of   - it is used to iteare the array
+
+// for(intail variable of array_name){
+//   group of statements
+// }
+
+
+// let arr=[2,3,4,5,6,7,8]
+
+// let max=arr[0]
+// for(let s of arr){
+//   // console.log(s)
+
+//   if(s<max){
+//     max=s
+//   }
+
+// }
+// console.log(max)
+
+
+    
+// for-in  - it is used iterate object key \
+
+// for(intial variable in object_name){
+  // group of statements
+// }
+
+
+  
+
+let obj={
+  name:"subbu",
+  city:"banglore",
+  email:"e@gmail.com",
+  state:"KA"
+}
+
+for(let i in obj){
+  console.log(i+":"+obj[i])
+}
+
+
+
+
+    </script>
+    
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+
+
+//  to print ringth angle triangle
+
+
+      // for(let i=0;i<=4;i++){
+
+      //      for(let j=0;j<=i;j++){
+
+      //       // console.log(i)
+      //       document.write("*")
+
+      //      }    
+
+      //      document.write("</br>")
+           
+      //        //i= 0  //
+
+
+      // }
+
+    
+
+      // while-loop - starting with condtion loop 
+
+      // intial value
+      // while(condtion){
+      // group of statements
+      // inc/dec
+      
+    // }
+
+
+    // let i=0
+
+    // while(i<=10){
+    //     if(i%2==1){
+    //       console.log(i)
+    //     }
+    //   i++
+    // }
+
+
+    //  let a=[4,3,2]
+
+    //  let i=0
+    //  while(i<a.length){
+    //   console.log(a[i])
+    //   i++
+    //  }
+
+
+    // find armstong number
+    
+    
+    let data=prompt("enter number")
+    let n=data
+    let sum=0
+    while(n>0){
+
+
+      let last=n%10  // to find last digit
+      let cal=last**data.length
+      sum+=cal
+      n=parseInt(n/10)  // to remove last digit
+
+
+    }
+
+    // console.log(sum)
+    if(sum==data){
+      alert("it is armstrong number")
+    }else{
+      alert("it is not a armstrong number")
+    }
+    
+
+
+
+  </script>
+  
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //API= application program interface 
+   // communication btw two servers
+
+   //JSON= java script object notation 
+
+  //JSON.stringfy()=it is used to convert object to string
+
+  //JSON.parse()=it is used to convert  string to object
+
+  let obj={
+    name:"html",city:"frontend",state:"web development"
+  }
+  console.log(obj)
+
+
+  </script>
+</body>
+</html>
+ ---------------------
+
