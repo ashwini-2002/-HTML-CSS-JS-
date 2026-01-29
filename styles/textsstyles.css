@@ -1,0 +1,71 @@
+
+        /*p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }*/
+    
+    .video-title{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        width: 280px;
+        line-height:24px ; 
+        margin-bottom: 5px;
+    
+          /*1) 7 th line:spacing btw the line  2)html entity middle dot &#183; 3) Html entity check mark&#10003;  4)css specificity-if we have multiple lines setting the same property there's actually a priority that the browser follows
+          5)&#62; Html entity greater than 1)imp point :1.create element with html 2.style with css one by one */     
+        /*font-style: italic;
+        text-align: center;*/
+    }
+    .video-stats{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:rgb(96, 96, 96);
+    margin-top: 0;
+    margin-bottom:20px ;
+    }
+    .video-author{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px ;
+        color:rgb(96, 96, 96);
+        margin-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .video-discription{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px ;
+        color:rgb(96, 96, 96);
+        width: 280px;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    .apple-text {
+        margin-bottom: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px ;
+        background-color:rgb(227, 65, 64);
+        color: white;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+           
+    }
+              /*1)text under line 2)text element :is a element that is inside a line of text 1)strong:bold letters  2)u:underline 3) */
+    
+    
+              .span-example{
+                color: red;
+                margin-left: 12px;
+              }
+              .span-example:hover{
+                text-decoration-line: underline;    
+    
+              }
+              .shop-link{
+                cursor: pointer;
+              }
+              .shop-link:hover{
+                text-decoration-line:underline ;
+              }
