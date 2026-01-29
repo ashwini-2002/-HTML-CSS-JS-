@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>how to create response web page</title>
+<style>
+    *{
+        padding: 0;
+        border: 0;
+    }
+    #menu{
+background-color: aqua;
+display: flex;
+justify-content: space-between;
+color: white;
+
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+    }
+
+    @media(max-width:768px){
+      ul{
+        display: inline;
+        position: absolute;
+        top: 50px;
+        background-color: blue;
+        left: 0;
+        right: 0;
+
+      }  
+    }
+    #data{
+display: inline;
+position: absolute;
+background-color: aqua;
+top: 105px;
+right: 0;
+left: 0;
+
+    }
+</style>
+</head>
+<body>
+     <!--MEDIA QUERIES = to create responsive web page
+     responsive web page =
+     -->
+     <div id="menu">
+     <p>BEASENT TECHNOLOGIES</p>
+     <ul>
+        <li>home</li>
+        <li>contact</li>
+        <li>about</li>
+        <li>services</li>
+     </ul>
+     </div>
+
+     <div id="data">
+     <h1>media queries</h1>
+     <p>Lorem ipsum dolor sit amet.</p>
+     <button>click</button>
+     </div>
+</body>
+</html>

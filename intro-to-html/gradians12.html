@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>gradients</title>
+    <style>
+        #a{
+height: 300px;
+border: 2px black solid;
+background-image: linear-gradient(to right, red 100px,yellow 200px,green,black);
+        }
+
+        #b{
+            height: 400px;
+            border: 2px black solid;
+            margin-top: 20px;
+            background: radial-gradient(purple,yellow,red ,white,black);
+        }
+        #c{
+            height: 400px;
+            border: 2px red solid;
+            margin-top: 10px;
+            background-color:black;
+            animation-name: ASHWINI;
+            animation-duration: 5s;
+
+
+        }
+        @keyframes ASHWINI{
+            20%{
+                background-color: blueviolet;
+            }
+            40%{
+                background-color: darkviolet;
+            }
+
+        }
+        #d{
+            height: 300px;
+            margin-top: 10px;
+            border: 2px black solid;
+            background-color: crimson;
+            animation: good 4s  infinite;
+            animation-delay: 2s;
+        }
+        @keyframes good{
+            20%{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuowQrCYQaOFWJGfPpM7q2OBFFVFOE7Cue0r78aFWcxQ&s);
+            }
+            40%{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQklp2QP6LnXncVaBth78wZRkmwhVqBPvm-rM9ZJI8XtYTLuw4EYrZWUbe7PQ&s);
+    
+            }
+            60%{
+background-color: darkturquoise;
+            }
+            80%{
+                background-color: green;
+            }
+            }
+        
+    </style>
+</head>
+<body>
+    <!--
+    gradients=
+    3 types of gradients -
+    1.linear gradients =default direction top to bottom or left to right 
+    2.radial gradients =  it will start with center of the circle 
+      3.conic gradients it is not used 
+    -->
+    <div id="a">
+
+    </div>
+    <div id="b">
+
+    </div>
+    <!--Animations  
+    @keyframes-->
+    <div id="c">
+
+    </div>
+
+    <div id="d">
+
+    </div>
+</body>
+</html>

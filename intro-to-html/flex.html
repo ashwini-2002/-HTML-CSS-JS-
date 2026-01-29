@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #data{
+            background-color: teal;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            
+
+        }
+        #data ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+        } 
+        #data1{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        #data1 ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+
+        }
+
+        #data2{
+            background-color: violet;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+
+
+        }
+
+        #data2 ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+        #user{
+            background-color: antiquewhite;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+        #item1{
+            background-color: aquamarine;
+            padding: 10px;
+            text-align: center;
+            border: 2px black solid;
+            border-radius:50%;
+        }
+        #item2{
+            background-color:red;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10%;
+            border: 2px black dotted;
+        }
+
+        #item3{
+            background-image: url("https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            /* height: 300px; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            border: 2px black double;
+            border-radius: 50%;
+        }
+
+        #center{
+
+            background-color: red;
+            height: 400px;
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- display:flex  - it is used to aling row wise content into the cloumn wise
+                    -single diemention
+         justify-content:"space-between" -it is used create some space in b/w block
+         justify-content:"space-around"  - it is used to make same space b/w amd around blocks
+         justify-content:"space-evenly"  - it is used to make equal sapce b/w block
+         justify-content:"center"        - it used make the content column wise center
+         align-items:center               - it is used make row wise center        
+
+         
+     
+    -->
+
+
+
+    <div id="data">
+        <p>Besant Technologies</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    <div id="data1">
+        <p>Besant Technologies</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    
+    <div id="data2">
+        <p>Besant Technologies</p>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </div>
+
+
+    <div id="user">
+        <div id="item1">
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div id="item2">
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div id="item3">
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div>
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div>
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+        <div>
+            <h1>flex</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button>click</button>
+        </div>
+    </div>
+
+
+      <div id="center">
+        <h1>Lorem ipsum, dolor sit <br> amet consectetur adipisicing.</h1>
+      </div>
+
+    
+</body>
+</html>

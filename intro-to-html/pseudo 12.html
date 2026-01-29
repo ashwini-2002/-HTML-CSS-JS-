@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>pseudo elements,classes</title>
+    <style>
+ul{
+    background-color: aqua;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+ul li:hover{
+    background-color: blueviolet;
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 50%;
+}
+ul:active{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuowQrCYQaOFWJGfPpM7q2OBFFVFOE7Cue0r78aFWcxQ&s);
+    height: 200px;
+    background-repeat: no-repeat;
+  
+}
+#parent p:nth-child(3){
+background-color: chartreuse;
+}
+#parent1 p:nth-of-type(3){
+    background-color: blue;
+}
+
+    </style>
+</head>
+<body>
+    <!--pseudo elements =it is denoted with :: (double colon)  ,it applies style automatically
+        pseudo classes= it is denoted with : (single colon)  it is user iteract when user move particular block  
+        hover,active
+        hover:
+    -->
+        <div>
+<ul>
+    <li>home</li>
+    <li>about</li>
+    <li>contact</li>
+</ul>
+        </div>
+<div id="parent">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+</div>
+
+<div id="parent1">
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+</div>
+<p id="a">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
